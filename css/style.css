@@ -1,0 +1,154 @@
+/* Common css start */
+:root{
+    --primaryFont: 'Poppins', sans-serif;
+    --secondaryFont: 'PT Sans', sans-serif;
+    --primaryColor: #FFCC00;
+    --secondaryColor: #353535;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.container{
+    width: 1114px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+}
+body{
+    font-family: var(--primaryFont);
+}
+.btn{
+    padding: 16px 45px;
+    background-color: var(--primaryColor);
+    border-radius: 20px;
+    color: #FFF;
+    font-family: var(--primaryFont);
+    font-size: 20px;
+    line-height: 180%; /* 36px */
+    display: inline-block;
+}
+.btn.outline{
+    background-color: transparent;
+    border: 1px solid #000;
+    color: var(--secondaryColor);
+    font-weight: 500;
+}
+
+/* Common css end */
+/* Nav css start */
+nav .logo{
+   width: 30%;
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    color: var(--secondaryColor);
+    font-size: 15px;
+    font-weight: 500px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 18px 22px 5px ;
+    display: block;
+    position: relative;
+}
+nav .menu ul li a::before{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--secondaryColor);
+    position: absolute;
+    top: 10px;
+    right: 0;
+    transition: 0.5s;
+}
+nav .menu ul li :hover a::before{
+    width: 100%;
+}
+nav .menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--secondaryColor);
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+nav .menu ul li :hover ::after{
+    width: 100%;
+}
+
+/* Nav css end */
+/* Banner css start */
+#banner{
+    padding-top: 70px;
+}
+#banner .banner_text{
+    width: 50%;
+}
+#banner .banner_image{
+    width: 50%;
+}
+#banner .banner_text h4{
+    color: var(--secondaryColor);
+    font-size: 24px;
+    font-weight: 400;
+}
+#banner .banner_text h1{
+    color: #353535;
+    font-family: var(--secondaryFont);
+    font-size: 64px;
+    font-weight: 700;
+}
+#Banner .banner_text p{
+    color: #353535;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 180%, /* 36px */;
+}
+#banner .banner_text a{
+    margin-right: 40px;
+    
+}
+#banner .follow{
+    position: relative;
+}
+#banner .me{
+    font-size: 20px;
+}
+#banner .follow li i{
+    font-size: 20px;
+    color:var(--primary_color);
+    width: 50px;
+    height: 50px;
+    outline: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #F4F3F3;
+    margin-left: 26px;
+}
+/* Banner css start */
